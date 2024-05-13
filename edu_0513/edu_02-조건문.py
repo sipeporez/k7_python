@@ -31,3 +31,12 @@ if "e" in string:
     print("contain")
 
 print(sum([True, True, False]))
+
+
+data = [1, 2, 3]
+for d in data:
+    if d < 3:
+        print(d, end=" ")
+    else:
+        print("wrong!")
+print("done!")
