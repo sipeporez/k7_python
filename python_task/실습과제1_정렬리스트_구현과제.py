@@ -7,7 +7,7 @@ random_numbers = []
 
 # 난수를 20개 생성하여 리스트에 추가
 for _ in range(20):
-    random_numbers.append((random.randint(1, 101)))
+    random_numbers.append((random.randint(10, 101)))
 # 저장된 리스트 출력
 print(f"난수 생성 = {random_numbers}")
 # s 다음에 숫자를 가진 변수들을 생성하여 리스트에 저장하는 예제
