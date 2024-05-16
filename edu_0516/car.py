@@ -1,28 +1,16 @@
-class Dog2:
-    """클래스 Dog 정의"""
-
-    def __init__(self, name, age):
-        """클래스 Dog 생성자"""
-        self.name = name
-        self.age = age
-
-    def sit(self):
-        """앉기"""
-        print(f"{self.name} is now sitting.")
-
-    def roll_over(self):
-        """구르기"""
-        print(f"{self.name} rolled over.")
-
-
-myDog = Dog2("hong", 10)
-myDog.sit()
-
-myDog.roll_over()
+# import용 .py 파일 / 클래스 변수와 메소드 추가
 
 
 class Car2:
     """자동차를 표현하는 클래스"""
+
+    # 클래스 변수 count
+    count = 0
+
+    # 클래스 메소드
+    @classmethod
+    def printing(self):
+        print(f"클래스 메소드 출력 : {Car2.count}")
 
     def __init__(self, make, model, year, color):
         """속성 초기화"""
@@ -56,15 +44,6 @@ class Car2:
         print("가스탱크 충전")
 
 
-myCar = Car2("audi", "a4", 2024, "green")
-print(myCar)
-print(myCar.get_descriptive_name())
-# 클래스 속성 바꾸기
-myCar.color = "red"
-myCar.update_odometer(50)
-myCar.read_odometer()
-
-
 # 클래스 상속
 class ElecCar(Car2):
     # init 호출 = 상위 클래스의 생성자 호출
@@ -87,9 +66,3 @@ class Battery:
 
     def battery_capa(self):
         return f"배터리 크기 : {self.battery_size}"
-
-
-my_elec_car = ElecCar("tesla", "model s", 2023, "black")
-print(my_elec_car.get_descriptive_name())
-print(my_elec_car.battery.battery_capa())
-print(my_elec_car.fill_gas_tank())
