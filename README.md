@@ -7,5 +7,6 @@
 + 05.17 : pygame 실습 1
 + 05.20 : pygame 실습 2 - 함수화, 리팩토링
 + 05.21 : 파일 입/출력, os, matplotlib
-+ 05.22 : matplotlib, 10x10 배열 randomwalk 분포 그래프
++ 05.22 : matplotlib, 10x10 배열 randomwalk 분포 그래프, JSON, CSV 파일처리
 + 05.24 : pygame 실습 3 - 클래스화
++ 05.27 : requests, api, pytest
